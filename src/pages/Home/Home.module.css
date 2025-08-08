@@ -62,7 +62,13 @@
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(#11182700, #11182780, #111827);
+  background: linear-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #111827d3,
+    #111827
+  );
 }
 
 .columnPhoto {
