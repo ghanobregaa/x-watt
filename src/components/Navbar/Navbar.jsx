@@ -5,32 +5,18 @@ function Navbar() {
   return (
     <motion.div
       className={styles.container}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", delay: 0.6, duration: 1 }}
     >
       <div className={styles.nav}>
         <div className={styles.logoTitle}>
-          <img src="logo_text.svg" />
+          <img src="logo_white.svg" />
         </div>
         <div className={styles.row}>
-          <motion.div
-            whileHover={{ color: "#fff", backgroundColor: "#ffffff15" }}
-            className={styles.btn}
-          >
-            Produtos
-          </motion.div>
-          <motion.div
-            whileHover={{ color: "#fff", backgroundColor: "#ffffff15" }}
-            className={styles.btn}
-          >
-            Sobre nós
-          </motion.div>{" "}
-          <motion.div
-            whileHover={{ color: "#fff", backgroundColor: "#ffffff15" }}
-            className={styles.btn}
-          >
-            Contactos
-          </motion.div>
+          <div className={styles.btn}>Produtos</div>
+          <div className={styles.btn}>Sobre nós</div>{" "}
+          <div className={styles.btn}>Contactos</div>
         </div>
       </div>
     </motion.div>
