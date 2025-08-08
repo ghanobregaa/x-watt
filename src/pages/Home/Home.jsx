@@ -14,35 +14,151 @@ function Home() {
       <Navbar />
       <section>
         <div className={styles.center}>
-          <motion.div className={styles.box}>
+          <div className={styles.box}>
+            <div className={styles.title}>
+              Power your home with clean energy{" "}
+              <span style={{ color: "#4ade80" }}>storage</span>
+            </div>
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, type: "spring", ease: "easeInOut" }}
-              className={styles.title}
-            >
-              Power Your Home with Clean Energy span>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.75, ease: "easeInOut" }}
+              whileHover={{ color: "#fff", backgroundColor: "#ffffff50" }}
               className={styles.aboutBtn}
             >
               Saber mais
             </motion.div>
-          </motion.div>
+          </div>
         </div>
-        <motion.div className={styles.mainImg}></motion.div>
       </section>
       <section>
-        <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.25 }}
-        >
-          <img className={styles.product} src="powerwall.png" />
-        </motion.div>
+        <div className={styles.center}>
+          <div className={styles.photoRow}>
+            <motion.div
+              initial={{ y: 10, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ type: "spring", delay: 0.25 }}
+              className={styles.photoFrame}
+            >
+              <img src="powerwall3.jpg" />
+            </motion.div>
+            <div></div>
+            <div className={styles.columnPhoto}>
+              <motion.div
+                initial={{ x: -10, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", delay: 0.3 }}
+                className={styles.photoTitle}
+              >
+                Powerwall 3
+              </motion.div>
+              <motion.div
+                initial={{ x: -10, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", delay: 0.35 }}
+                className={styles.photoDesc}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                molestiae. Aliquid fugiat facere ipsam tempore dolorem impedit.
+                Quae maiores, delectus adipisci esse quaerat aut molestias
+                numquam nam qui culpa id!
+              </motion.div>
+              <motion.div
+                initial={{ x: -10, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", delay: 0.4 }}
+                className={styles.learnMore}
+              >
+                Saber mais
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className={styles.center}>
+          <div className={styles.photoRow}>
+            <div className={styles.columnPhoto}>
+              <motion.div
+                initial={{ x: 10, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", delay: 0.3 }}
+                className={styles.photoTitle}
+              >
+                Wallconnector
+              </motion.div>
+              <motion.div
+                initial={{ x: 10, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", delay: 0.35 }}
+                className={styles.photoDesc}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                molestiae. Aliquid fugiat facere ipsam tempore dolorem impedit.
+                Quae maiores, delectus adipisci esse quaerat aut molestias
+                numquam nam qui culpa id!
+              </motion.div>
+              <motion.div
+                initial={{ x: 10, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", delay: 0.4 }}
+                className={styles.learnMore}
+              >
+                Saber mais
+              </motion.div>
+            </div>
+            <div></div>
+            <motion.div
+              initial={{ y: 10, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ type: "spring", delay: 0.25 }}
+              className={styles.photoFrame}
+            >
+              <img src="wallconnector.webp" />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className={styles.center}>
+          <div className={styles.photoRow}>
+            <motion.div
+              initial={{ y: 10, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ type: "spring", delay: 0.25 }}
+              className={styles.photoFrame}
+            >
+              <img src="megapack.webp" />
+            </motion.div>
+            <div></div>
+            <div className={styles.columnPhoto}>
+              <motion.div
+                initial={{ x: -10, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", delay: 0.3 }}
+                className={styles.photoTitle}
+              >
+                Tesla mega pack
+              </motion.div>
+              <motion.div
+                initial={{ x: -10, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", delay: 0.35 }}
+                className={styles.photoDesc}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                molestiae. Aliquid fugiat facere ipsam tempore dolorem impedit.
+                Quae maiores, delectus adipisci esse quaerat aut molestias
+                numquam nam qui culpa id!
+              </motion.div>
+              <motion.div
+                initial={{ x: -10, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", delay: 0.4 }}
+                className={styles.learnMore}
+              >
+                Saber mais
+              </motion.div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

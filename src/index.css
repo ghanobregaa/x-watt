@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #111827;
 }
 
 * {
@@ -14,6 +14,9 @@ body {
 }
 
 section {
+  margin: auto;
+  max-width: 1920px;
+  position: relative;
   min-height: 100vh;
   height: 100vh;
 }
