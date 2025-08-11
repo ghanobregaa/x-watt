@@ -8,11 +8,11 @@
   height: 100%;
   display: grid;
   justify-content: center;
+  place-items: center;
   z-index: 1;
 }
 
 .box {
-  margin-top: 20%;
   max-width: 1000px;
   display: flex;
   gap: 2rem;
@@ -82,11 +82,20 @@
 }
 
 .photo {
-  scale: 0.8;
+  scale: 1;
   width: 100%;
   border-radius: 12px;
   overflow: hidden;
   aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.photo::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(transparent, #000);
+  width: 100%;
+  height: 100%;
 }
 
 .photo img {
@@ -195,14 +204,17 @@
 
 .divide {
   padding: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 .sectionColumn {
+  margin: auto;
+  max-width: 750px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 1rem;
 }
 
@@ -213,7 +225,7 @@
 }
 
 .sectionTitle span {
-  color: #aeaeae;
+  color: #aaa;
 }
 
 .sectionDesc1 {
@@ -225,4 +237,32 @@
   color: #9d9d9d;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.columnSection2 {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.cardSection {
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .titleTransparent {
+    font-size: 2rem;
+  }
+  .btnMais {
+    font-size: 0.75rem;
+  }
 }

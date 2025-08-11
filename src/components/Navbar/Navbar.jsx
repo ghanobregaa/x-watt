@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import { motion } from "motion/react";
+import { TbMenu3 } from "react-icons/tb";
 function Navbar() {
   return (
     <motion.div
@@ -15,8 +16,11 @@ function Navbar() {
         </div>
         <div className={styles.row}>
           <div className={styles.btn}>Produtos</div>
-          <div className={styles.btn}>Sobre nós</div>{" "}
+          <div className={styles.btn}>Sobre nós</div>
           <div className={styles.btn}>Contactos</div>
+        </div>
+        <div className={styles.hamburguer}>
+          <TbMenu3 className={styles.iconHamburguer} size={30} />
         </div>
       </div>
     </motion.div>

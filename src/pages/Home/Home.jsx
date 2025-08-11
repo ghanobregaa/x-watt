@@ -4,7 +4,15 @@ import styles from "./Home.module.css";
 import { motion } from "motion/react";
 import jsonData from "../../app.json";
 import Footer from "../../components/Footer/Footer";
-import { TbArrowUpRight, TbChevronUpRight } from "react-icons/tb";
+import {
+  TbArrowUpRight,
+  TbBuildingSkyscraper,
+  TbChevronUpRight,
+  TbHome,
+  TbScript,
+  TbSettingsSpark,
+  TbSnowflake,
+} from "react-icons/tb";
 
 function Home() {
   const [app, setApp] = useState({});
@@ -69,72 +77,52 @@ function Home() {
           >
             <motion.img src="powerwall3.jpg" />
           </motion.div>
-          <div className={styles.columnDesc}>
-            <motion.div
-              initial={{ opacity: 0, translateX: -30 }}
-              whileInView={{ opacity: 1, translateX: 0 }}
-              transition={{ type: "spring", delay: 0.25, duration: 1 }}
-              viewport={{ once: "true" }}
-              className={styles.productTitle}
-            >
-              Powerwall 3
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, translateX: -30 }}
-              whileInView={{ opacity: 1, translateX: 0 }}
-              transition={{ type: "spring", delay: 0.3, duration: 1 }}
-              viewport={{ once: "true" }}
-              className={styles.productDesc}
-            >
+          <motion.div
+            initial={{ opacity: 0, translateX: -30 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{
+              type: "spring",
+              duration: 1,
+              delay: 0.7,
+            }}
+            viewport={{ once: "true" }}
+            className={styles.columnDesc}
+          >
+            <motion.div className={styles.productTitle}>Powerwall 3</motion.div>
+            <motion.div className={styles.productDesc}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
               tempore veniam molestias eum asperiores voluptates tenetur hic,
               repellendus praesentium aliquam, consectetur quo libero officiis
               modi neque corporis voluptatibus ratione sint?
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, translateX: -30 }}
-              whileInView={{ opacity: 1, translateX: 0 }}
-              transition={{ type: "spring", delay: 0.35, duration: 1 }}
-              viewport={{ once: "true" }}
-              className={styles.aboutBtn}
-            >
+            <motion.div className={styles.aboutBtn}>
               Saber mais <TbArrowUpRight className={styles.arrow} />
             </motion.div>
-          </div>
+          </motion.div>
         </div>
         <div className={styles.gridTemplate}>
-          <div className={styles.columnDesc}>
-            <motion.div
-              initial={{ opacity: 0, translateX: -30 }}
-              whileInView={{ opacity: 1, translateX: 0 }}
-              transition={{ type: "spring", delay: 0.25, duration: 1 }}
-              viewport={{ once: "true" }}
-              className={styles.productTitle}
-            >
-              Powerwall 3
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, translateX: -30 }}
-              whileInView={{ opacity: 1, translateX: 0 }}
-              transition={{ type: "spring", delay: 0.3, duration: 1 }}
-              viewport={{ once: "true" }}
-              className={styles.productDesc}
-            >
+          <motion.div
+            initial={{ opacity: 0, translateX: 30 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{
+              type: "spring",
+              duration: 1,
+              delay: 0.7,
+            }}
+            viewport={{ once: "true" }}
+            className={styles.columnDesc}
+          >
+            <motion.div className={styles.productTitle}>Powerwall 3</motion.div>
+            <motion.div className={styles.productDesc}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
               tempore veniam molestias eum asperiores voluptates tenetur hic,
               repellendus praesentium aliquam, consectetur quo libero officiis
               modi neque corporis voluptatibus ratione sint?
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, translateX: -30 }}
-              whileInView={{ opacity: 1, translateX: 0 }}
-              transition={{ type: "spring", delay: 0.35, duration: 1 }}
-              viewport={{ once: "true" }}
-              className={styles.aboutBtn}
-            >
+            <motion.div className={styles.aboutBtn}>
               Saber mais <TbArrowUpRight className={styles.arrow} />
             </motion.div>
-          </div>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, translateY: "30%" }}
             whileInView={{ opacity: 1, translateY: 0 }}
@@ -155,50 +143,58 @@ function Home() {
           >
             <motion.img src="powerwall3.jpg" />
           </motion.div>
-          <div className={styles.columnDesc}>
-            <motion.div
-              initial={{ opacity: 0, translateX: -30 }}
-              whileInView={{ opacity: 1, translateX: 0 }}
-              transition={{ type: "spring", delay: 0.25, duration: 1 }}
-              viewport={{ once: "true" }}
-              className={styles.productTitle}
-            >
-              Powerwall 3
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, translateX: -30 }}
-              whileInView={{ opacity: 1, translateX: 0 }}
-              transition={{ type: "spring", delay: 0.3, duration: 1 }}
-              viewport={{ once: "true" }}
-              className={styles.productDesc}
-            >
+          <motion.div
+            initial={{ opacity: 0, translateX: -30 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{
+              type: "spring",
+              duration: 1,
+              delay: 0.7,
+            }}
+            viewport={{ once: "true" }}
+            className={styles.columnDesc}
+          >
+            <motion.div className={styles.productTitle}>Powerwall 3</motion.div>
+            <motion.div className={styles.productDesc}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
               tempore veniam molestias eum asperiores voluptates tenetur hic,
               repellendus praesentium aliquam, consectetur quo libero officiis
               modi neque corporis voluptatibus ratione sint?
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, translateX: -30 }}
-              whileInView={{ opacity: 1, translateX: 0 }}
-              transition={{ type: "spring", delay: 0.35, duration: 1 }}
-              viewport={{ once: "true" }}
-              className={styles.aboutBtn}
-            >
+            <motion.div className={styles.aboutBtn}>
               Saber mais <TbArrowUpRight className={styles.arrow} />
             </motion.div>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section>
         <div className={styles.divide}>
           <div className={styles.sectionColumn}>
-            <div className={styles.sectionTitle}>
+            <motion.div
+              initial={{ opacity: 0, translateX: -30 }}
+              whileInView={{ opacity: 1, translateX: 0 }}
+              transition={{ type: "spring", delay: 0.25, duration: 1 }}
+              viewport={{ once: "true" }}
+              className={styles.sectionTitle}
+            >
               Queremos Fazer Parte da <span>Sua Transição Energética!</span>
-            </div>
-            <div className={styles.sectionDesc1}>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, translateX: -30 }}
+              whileInView={{ opacity: 1, translateX: 0 }}
+              transition={{ type: "spring", delay: 0.25, duration: 1 }}
+              viewport={{ once: "true" }}
+              className={styles.sectionDesc1}
+            >
               Somos o parceiro certo para o ajudar na sua transição energética.
-            </div>
-            <div className={styles.sectionDesc2}>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, translateX: -30 }}
+              whileInView={{ opacity: 1, translateX: 0 }}
+              transition={{ type: "spring", delay: 0.25, duration: 1 }}
+              viewport={{ once: "true" }}
+              className={styles.sectionDesc2}
+            >
               Oferecemos soluções especializadas em energia solar, armazenamento
               de energia e carregamento de veículos elétricos para casas e
               empresas.
@@ -214,7 +210,59 @@ function Home() {
               <br />
               <br />A nossa equipa de profissionais garante o acompanhamento
               durante todo o ciclo de vida das instalações de energia renovável.
-            </div>
+            </motion.div>
+          </div>
+          <div className={styles.columnSection2}>
+            <motion.div
+              initial={{ opacity: 0, translateY: "30%" }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ type: "spring", delay: 0.2, duration: 1 }}
+              viewport={{ once: "true" }}
+              className={styles.cardSection}
+            >
+              <TbBuildingSkyscraper size={40} />
+              <div>Empresas</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, translateY: "30%" }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ type: "spring", delay: 0.25, duration: 1 }}
+              viewport={{ once: "true" }}
+              className={styles.cardSection}
+            >
+              <TbScript size={40} />
+              <div>Projetos Públicos</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, translateY: "30%" }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ type: "spring", delay: 0.3, duration: 1 }}
+              viewport={{ once: "true" }}
+              className={styles.cardSection}
+            >
+              <TbHome size={40} />
+              <div>Autoconsumo Residencial</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, translateY: "30%" }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ type: "spring", delay: 0.35, duration: 1 }}
+              viewport={{ once: "true" }}
+              className={styles.cardSection}
+            >
+              <TbSnowflake size={40} />
+              <div>Climatização & Água Quente Residencial</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, translateY: "30%" }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ type: "spring", delay: 0.4, duration: 1 }}
+              viewport={{ once: "true" }}
+              className={styles.cardSection}
+            >
+              <TbSettingsSpark size={40} />
+              <div>Outras Soluções Residenciais</div>
+            </motion.div>
           </div>
         </div>
       </section>
