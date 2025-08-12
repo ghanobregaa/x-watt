@@ -12,16 +12,14 @@
 }
 
 .nav {
-  margin: 2rem 2rem;
-  max-width: 1920px;
-  width: 100%;
+  width: min(1920px, 100% - 2rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .nav img {
-  width: 150px;
+  width: 200px;
 }
 
 .row {

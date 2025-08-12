@@ -12,7 +12,7 @@ function Navbar() {
     >
       <div className={styles.nav}>
         <div className={styles.logoTitle}>
-          <img src="logo_white.svg" />
+          <img src="logo_text.svg" />
         </div>
         <div className={styles.row}>
           <div className={styles.btn}>Produtos</div>

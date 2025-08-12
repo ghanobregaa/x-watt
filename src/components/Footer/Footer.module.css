@@ -1,5 +1,59 @@
 .container {
-  height: 300px;
-  background-color: #161f31;
+  background-color: #000;
+  padding: 4rem;
   width: 100%;
+  font-size: var(--footer-size);
+  border-top: 1px solid #1e1e1e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.column img {
+  width: 200px;
+}
+
+.text {
+  color: #aaa;
+}
+
+.spacer {
+  display: flex;
+  gap: 3rem;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.col div:nth-child(1) {
+  color: #aaa;
+}
+.col div:nth-child(2) {
+  color: #fafafa;
+}
+
+.rowIcons {
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  color: #fff;
+}
+
+.rowIcons div {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
 }
