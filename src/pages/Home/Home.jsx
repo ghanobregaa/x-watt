@@ -200,6 +200,52 @@ function Home() {
           </motion.div>
         </div>
       </section>
+      <div className={styles.columnCert}>
+        <motion.div
+          initial={{ opacity: 0, translateX: -30 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={animationDelay}
+          viewport={{ once: "true" }}
+          className={styles.certTitle}
+        >
+          A X-WATT tem certificação Tesla Energy
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateX: -30 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={animationDelay}
+          viewport={{ once: "true" }}
+          className={styles.certSubTitle}
+        >
+          Somos intaladores certificados para oferecer a si a melhor tecnologia
+          de armazenamento de energia
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, rotate: "10deg", scale: 0.7 }}
+          whileInView={{ opacity: 1, rotate: "0deg", scale: 1 }}
+          transition={animationDelay}
+          viewport={{ once: "true" }}
+          className={styles.cardCert}
+        >
+          <img src="image.png" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 2 }}
+          viewport={{ once: "true" }}
+          className={styles.certVideo}
+        >
+          <video
+            src="charge.webm"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+          />
+        </motion.div>
+      </div>
       <section>
         <div className={styles.divide}>
           <div className={styles.sectionColumn}>

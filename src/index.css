@@ -2,22 +2,22 @@
 
 :root {
   font-family: "Geist", sans-serif;
-  --font-size: 1.1rem;
+  --font-size: 1.25rem;
   --font-size-btn: 1.1rem;
   --padding-btn: 0.75rem 1.5rem;
   --main-title: 4rem;
   --sub-title: 2.5rem;
-  --footer-size: 1.1rem;
+  --footer-size: 1rem;
 }
 
 @media only screen and (max-width: 750px) {
   :root {
-    --font-size: 0.75rem;
+    --font-size: 1rem;
     --font-size-btn: 0.75rem;
     --padding-btn: 0.5rem 1rem;
     --main-title: 2rem;
     --sub-title: 1.5rem;
-    --footer-size: 1rem;
+    --footer-size: 0.75rem;
   }
 }
 
