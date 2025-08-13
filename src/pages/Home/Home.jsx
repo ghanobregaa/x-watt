@@ -27,7 +27,7 @@ function Home() {
     setApp(jsonData);
   });
 
-  const animationDelay = { type: "spring", duration: 1, delay: 0.5 };
+  const animationDelay = { type: "spring", duration: 0.65, delay: 0.5 };
   return (
     <>
       <Navbar />
@@ -72,8 +72,8 @@ function Home() {
       <section className={styles.sectionProducts} ref={targetRef}>
         <div className={styles.gridTemplate}>
           <motion.div
-            initial={{ opacity: 0, translateY: "30%" }}
-            whileInView={{ opacity: 1, translateY: 0 }}
+            initial={{ opacity: 0, rotate: "10deg", scale: 0.7 }}
+            whileInView={{ opacity: 1, rotate: "0deg", scale: 1 }}
             transition={animationDelay}
             viewport={{ once: "true" }}
             className={styles.photo}
@@ -147,8 +147,8 @@ function Home() {
             </motion.div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, translateY: "30%" }}
-            whileInView={{ opacity: 1, translateY: 0 }}
+            initial={{ opacity: 0, rotate: "-10deg", scale: 0.7 }}
+            whileInView={{ opacity: 1, rotate: "0deg", scale: 1 }}
             transition={animationDelay}
             viewport={{ once: "true" }}
             className={styles.photo}
@@ -158,8 +158,8 @@ function Home() {
         </div>
         <div className={styles.gridTemplate}>
           <motion.div
-            initial={{ opacity: 0, translateY: "30%" }}
-            whileInView={{ opacity: 1, translateY: 0 }}
+            initial={{ opacity: 0, rotate: "10deg", scale: 0.7 }}
+            whileInView={{ opacity: 1, rotate: "0deg", scale: 1 }}
             transition={animationDelay}
             viewport={{ once: "true" }}
             className={styles.photo}
