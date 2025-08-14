@@ -78,7 +78,7 @@ function Home() {
             viewport={{ once: "true" }}
             className={styles.photo}
           >
-            <motion.img src="powerwall3.jpg" />
+            <motion.img src="paineis.webp" />
           </motion.div>
           <motion.div className={styles.columnDesc}>
             <motion.div
@@ -153,7 +153,7 @@ function Home() {
             viewport={{ once: "true" }}
             className={styles.photo}
           >
-            <motion.img src="powerwall3.jpg" />
+            <motion.img src="paineis2.webp" />
           </motion.div>
         </div>
         <div className={styles.gridTemplate}>
@@ -164,7 +164,7 @@ function Home() {
             viewport={{ once: "true" }}
             className={styles.photo}
           >
-            <motion.img src="powerwall3.jpg" />
+            <motion.img src="paineis3.webp" />
           </motion.div>
           <motion.div className={styles.columnDesc}>
             <motion.div
@@ -197,6 +197,49 @@ function Home() {
             >
               Saber mais <TbArrowUpRight className={styles.arrow} />
             </motion.div>
+          </motion.div>
+        </div>
+        <div className={styles.gridTemplate}>
+          <motion.div className={styles.columnDesc}>
+            <motion.div
+              initial={{ opacity: 0, translateX: -30 }}
+              whileInView={{ opacity: 1, translateX: 0 }}
+              transition={animationDelay}
+              viewport={{ once: "true" }}
+              className={styles.productTitle}
+            >
+              Powerwall 3
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, translateX: -30 }}
+              whileInView={{ opacity: 1, translateX: 0 }}
+              transition={animationDelay}
+              viewport={{ once: "true" }}
+              className={styles.productDesc}
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              tempore veniam molestias eum asperiores voluptates tenetur hic,
+              repellendus praesentium aliquam, consectetur quo libero officiis
+              modi neque corporis voluptatibus ratione sint?
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, translateX: -30 }}
+              whileInView={{ opacity: 1, translateX: 0 }}
+              transition={animationDelay}
+              viewport={{ once: "true" }}
+              className={styles.aboutBtn}
+            >
+              Saber mais <TbArrowUpRight className={styles.arrow} />
+            </motion.div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, rotate: "-10deg", scale: 0.7 }}
+            whileInView={{ opacity: 1, rotate: "0deg", scale: 1 }}
+            transition={animationDelay}
+            viewport={{ once: "true" }}
+            className={styles.photo}
+          >
+            <motion.img src="charger.webp" />
           </motion.div>
         </div>
       </section>
