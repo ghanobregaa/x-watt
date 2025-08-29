@@ -8,6 +8,7 @@
   --main-title: 4rem;
   --sub-title: 2.5rem;
   --footer-size: 1rem;
+  --modal-font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 750px) {
@@ -18,6 +19,7 @@
     --main-title: 2rem;
     --sub-title: 1.5rem;
     --footer-size: 0.75rem;
+    --modal-font-size: 2rem;
   }
 }
 

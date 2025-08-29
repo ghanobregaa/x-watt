@@ -14,8 +14,10 @@ import {
   TbSnowflake,
 } from "react-icons/tb";
 import { delay } from "motion";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   const [app, setApp] = useState({});
   const targetRef = useRef(null);
 
@@ -260,7 +262,7 @@ function Home() {
           viewport={{ once: "true" }}
           className={styles.certSubTitle}
         >
-          Somos intaladores certificados para oferecer a si a melhor tecnologia
+          Somos instaladores certificados para oferecer a si a melhor tecnologia
           de armazenamento de energia
         </motion.div>
         <motion.div
@@ -324,6 +326,7 @@ function Home() {
               transition={animationDelay}
               viewport={{ once: "true" }}
               className={styles.proposal}
+              onClick={() => navigate("/proposta")}
             >
               Solicite-nos uma proposta
             </motion.div>

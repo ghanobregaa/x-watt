@@ -12,7 +12,7 @@
 }
 
 .nav {
-  width: min(1440px, 100% - 2rem);
+  width: min(1920px, 100% - 2rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +49,38 @@
 
 .iconHamburguer {
   color: #fff;
+}
+
+.iconClose {
+  color: #000;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalNav {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.listModal {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: var(--modal-font-size);
 }
 
 @media only screen and (max-width: 700px) {
